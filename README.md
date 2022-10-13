@@ -34,7 +34,7 @@ Site should be completly responsive at different screen sizes.
 ### Links
 
 - Solution URL: [Github](https://github.com/Raunak40/Responsive_Web_Layout)
-- Live Site URL: [shimmering-squirrel-76974c](https://shimmering-squirrel-76974c.netlify.app)
+- Live Site URL: [shimmering-squirrel-76974c](https://lucent-starburst-39dd71.netlify.app)
 
 ## My process
 
@@ -62,5 +62,5 @@ I think this site is completed but I wil improve it when I will learn more advan
 
 ## Author
 
-- Website - [Raunak Raj](https://shimmering-squirrel-76974c.netlify.app)
+- Website - [Raunak Raj](https://lucent-starburst-39dd71.netlify.app)
 - Frontend Mentor - [@Raunak40](https://www.frontendmentor.io/profile/Raunak40)
