@@ -27,7 +27,7 @@ Site should be completly responsive at different screen sizes.
 ### Screenshot
 
 ![Mobile Preview](images/Mobile-Preview.png)
-![Mobile Preview with open navbar](images/Mobile-Preview-navbar.png)
+![Mobile Preview with open navbar](images/Mobile-Preview-nav.png)
 ![Tablet Preview](images/Tablet-Preview.png)
 ![Desktop Preview](images/Desktop-Preview.png)
 
