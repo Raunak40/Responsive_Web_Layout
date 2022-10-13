@@ -1,0 +1,259 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+/* typography */
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0;
+    max-width: 1200px;
+    color: #6F737F;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-size: .9em;
+}
+
+/* layout */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header{
+    background: #2E323F;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.nav{
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav--toggle{
+    background-color: #6F737F;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    border: none;
+    transition: opacity 500ms ease;
+    position: absolute;
+    left: 0;
+}
+
+.nav--toggle:hover{
+    opacity: .5;
+}
+
+.hamburger{
+    width: 70%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.hamburger::before,
+.hamburger::after{
+    content: '';
+}
+
+.hamburger::before{
+    transform: translateY(-6px);
+}
+
+.hamburger::after{
+    transform: translateY(3px);
+}
+
+.list__items{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+.list__items--link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav{
+    visibility: hidden;
+    height: 0;
+}
+
+.nav--visible{
+    visibility: visible;
+    height: auto;
+}
+
+.btn,
+.signup--btn{
+    background-color: #A59678;
+    border-radius: 1em;
+    padding: .2em 1em;
+}
+
+.hero{
+    background: #3B4050;
+    padding-bottom: 2em;
+}
+
+.hero__title{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 5.3rem;
+    margin:0;
+    padding: 1rem 0;
+}
+
+.hero__title--inner{
+    color: #A59678;
+}
+
+.hero__text--inner{
+    font-size: 1.3em;
+}
+
+button{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.highlighted__content{
+    background: #e8edfb;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.highlighted__content--title,
+.primary__content--title,
+.footer__content--title{
+    color: #A59678;
+    font-family: 'Oswald', sans-serif;
+}
+
+.sidebar{
+    text-align: center;
+}
+
+.sidebar__title{
+    font-family: 'Oswald', sans-serif;
+    color:#fff;
+    margin-top: 0;
+}
+
+.sidebar__box{
+    background-color: #3B4050;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+footer{
+    background-color: #2E323F;
+    padding: 1em 0;
+    margin: 1em auto;
+}
+
+.footer__title{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.secondary{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width:700px) {
+    .nav--toggle{
+        display: none;
+    }
+    .nav{
+        visibility: visible;
+        display: flex;
+        height: auto;
+        font-size: 1.3em;
+        align-items: center;
+    }
+
+    .list__items{
+        padding-top: 0;
+        padding-left: 1em;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero__title{
+        width: 40%;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .hero__text{
+        font-size: 1.1rem;
+        width: 50%;
+        word-spacing: 1px;
+        align-self: flex-end;
+    }
+    .btn{
+        font-size: 1.1em;
+    }
+    .col + .col{
+        margin-left: 1em;
+    }
+    .primary{
+        width: 40%;
+    }
+    .secondary{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .nav{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .feed{
+        display: flex;
+        justify-content: space-between;
+    }
+    .primary__content{
+        width:55%;
+        padding-top: 1em;
+    }
+    .sidebar{
+        display:block;
+        width: 30%;
+        padding-top: 1em;
+    }
+    .sidebar__box.col{
+        margin-left: 0;
+    }
+}
